@@ -27,18 +27,19 @@ public class Controles implements KeyListener{
     }
     @Override
     public void keyReleased(KeyEvent e) {
-        int code = e.getKeyCode();
-        if (code == KeyEvent.VK_W);{
-            cimaPress = false;
-        }
-        if (code == KeyEvent.VK_S);{
-            baixoPress = false;
-        }
-        if (code == KeyEvent.VK_A);{
-            esqPress = false;
-        }
-        if (code == KeyEvent.VK_D);{
-            dirPress = false;
+        switch (e.getKeyChar()) {
+            case 'w':
+                cimaPress = false;
+                break;
+            case 's':
+                baixoPress = false;
+                break;
+            case 'a': 
+                esqPress = false;
+                break;
+            case 'd':
+                dirPress = false;
+                break;
         }
     }
 }
