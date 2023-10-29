@@ -8,14 +8,16 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 public class PainelJogo extends JPanel implements Runnable{
-    final int originalSkinSize = 16; //tamanho dos sprites: 16x16
+    final int originalSkinSize = 26; //tamanho dos sprites: 26x26
     int scale = 4;
 
-    public final int skinSize = originalSkinSize * scale; // 64x64
+    public final int skinSize = originalSkinSize * scale; // 104x104
+    public final int skinSizeHeight = skinSize;
+    public final int skinSizeWidth = originalSkinSize * scale * 2;
     final int maxColuna = 16;
     final int maxLinha = 12;
-    final int larguraTela = skinSize * maxColuna; // 1024 pixeis
-    final int comprimentoTela = skinSize * maxLinha; // 768 pixeis
+    final int larguraTela = skinSize * maxColuna; // 1664 pixeis
+    final int comprimentoTela = skinSize * maxLinha; // 1248 pixeis
     
     //FPS
     int fps = 60;

@@ -22,7 +22,7 @@ public class Nave extends Entidade{
     }
     public void getImagemNave(){
         try{
-            nave = ImageIO.read(getClass().getResourceAsStream("/assets/nave.png"));
+            nave = ImageIO.read(getClass().getResourceAsStream("/assets/br_callister.png"));
         } catch(IOException e ){
             e.printStackTrace();
         }
@@ -30,7 +30,7 @@ public class Nave extends Entidade{
     public void setValoresPadroes(){
         x = 100;
         y = 100;
-        velocidade = 4;
+        velocidade = 5;
     }
     public void update(){
         if (tecla.cimaPress) {
@@ -72,6 +72,6 @@ public class Nave extends Entidade{
     }
     public void draw(Graphics2D g2){
         BufferedImage image = nave;
-        g2.drawImage(image, x, y, pj.skinSize, pj.skinSize, null);
+        g2.drawImage(image, x, y, pj.skinSizeWidth, pj.skinSizeHeight, null);
     }
 }
