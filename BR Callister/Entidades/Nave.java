@@ -40,7 +40,7 @@ public class Nave extends Entidade{
                 x += velocidade / 2;
             } else if (tecla.esqPress){
                 y -= velocidade / 4;
-                y -= velocidade / 2;
+                x -= velocidade / 2;
             } else if (tecla.baixoPress){
                 y += velocidade;
             }

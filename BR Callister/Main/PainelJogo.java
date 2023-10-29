@@ -24,11 +24,6 @@ public class PainelJogo extends JPanel implements Runnable{
     Thread gameThread;
     Nave nave = new Nave(this, tecla);
 
-    //localização do jogador:
-    int player1X = 100;
-    int player1Y = 100;
-    int playerVel = 4;
-
     public PainelJogo(){
         this.setPreferredSize(new Dimension(larguraTela, comprimentoTela));
         this.setBackground(Color.black);
